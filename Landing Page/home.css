@@ -15,7 +15,37 @@ body {
 
 .container h1 {
 	text-decoration: underline;
+  margin-bottom: 16px;
 	text-align: center;
+}
+
+.paragraph-1 {
+  padding: 8px 100px;
+  margin: auto 410px;
+  margin-bottom: 64px;
+  width: 10%;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.256);
+  border-radius: 8px;
+}
+
+.intro-text {
+  margin: auto -58px;
+}
+
+.button {
+  background-color: #92a5bd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  margin: auto 72px;
+  padding: 4px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: white;
+  border-radius: 8px;
 }
 
 .flex-box {
@@ -24,7 +54,7 @@ body {
 }
 
 .flex-item {
-	width: 30%;
+	width: 50%;
 	margin: 16px auto;
 }
 
