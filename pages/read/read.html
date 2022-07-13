@@ -8,167 +8,8 @@
     <title>Blog Posts</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./read.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-        .footer {
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 16px;
-        }
-        .container {
-            padding: 22px;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;
-        }
-        body{
-        background-color: rgb(196, 222, 253);
-
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 1.6em;
-        }
-
-        .container{
-        width: 45%;
-        margin:auto;
-        border: 0px solid black;
-        }
-
-        .container h1{
-            text-decoration:underline;
-            text-align: center;
-        }
-
-        .flex-box {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .flex-item {
-            width: 50%;
-            margin: 16px auto;
-        }
-
-        .card {
-            border: 1px solid black;
-            border-radius: 8px;
-        }
-        .card-header {
-            padding: 16px;
-            border-bottom: 1px solid black;
-            background-color: rgb(13, 0, 43);
-            color: white;
-        }
-        .card-content {
-            background-color: white;
-            padding: 32px;
-            font-family: "Times New Roman", Times, serif;
-        }
-        .sidebar {
-            position: fixed;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background: #042331;
-            transition: all .5s ease;
-        }
-        .sidebar header{
-            font-size: 22px;
-            color: white;
-            text-align: center;
-            line-height: 70px;
-            background: rgb(13, 0, 43);
-            user-select: none;
-        }
-        .sidebar ul a{
-            display: block;
-            height: 100%;
-            width: 100%;
-            line-height: 65px;
-            font-size: 20px;
-            color: white;
-            padding-left: 40px;
-            box-sizing: border-box;
-            border-top: 1px solid rgba(255,255,255,.1);
-            border-bottom: 1px solid black;
-            transition: .4s;
-        }
-        ul li:hover a{
-            padding-left: 50px;
-        }
-        .sidebar ul a i{
-            margin-right: 16px;
-        }
-        #check{
-            display: none;
-        }
-        label #btn,label #cancel{
-            position: absolute;
-            cursor: pointer;
-            background: rgb(13, 0, 43);
-            border-radius: 3px;
-        }
-        label #btn{
-            left: 25px;
-            top: 25px;
-            font-size: 35px;
-            color: white;
-            padding: 6px 12px;
-            transition: all .5s;
-        }
-        label #cancel{
-            z-index: 1111;
-            left: -195px;
-            top: 17px;
-            font-size: 30px;
-            color: #0a5275;
-            padding: 4px 9px;
-            transition: all .5s ease;
-        }
-        #check:checked ~ .sidebar{
-            left: 0;
-        }
-        #check:checked ~ label #btn{
-            left: 250px;
-            opacity: 0;
-            pointer-events: none;
-        }
-        #check:checked ~ label #cancel{
-            left: 195px;
-        }
-        #check:checked ~ section{
-            margin-left: 250px;
-        }
-        section{
-            background: no-repeat;
-            background-position: center;
-            background-size: cover;
-            transition: all .5s;
-        }
-        .blogtitle {
-            text-align: center;
-        }
-        .copyrightstuff {
-            text-align: center;
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-        .blogs {
-            margin-bottom: 80px;
-        }
-        .blog3 {
-            margin-bottom: 115px;
-        }
-    </style>
 </head>
 
 <body style="height: 1190px">
@@ -176,16 +17,14 @@
     <label for="check">
         <i class="fa fa-bars" id="btn"></i>
         <i class="fa fa-times" id="cancel"></i>
-        
+
     </label>
     <div class="sidebar">
         <header>Sidebar</header>
         <ul>
-            <li><a href="#"><i class="fa fa-qrcode"></i>⠀Dashboard</a></li>
-            <li><a href="#"><i class="fa fa-home"></i>⠀Home</a></li>
-            <li><a href="#"><i class="fa fa-folder"></i>⠀Blogs</a></li>
-            <li><a href="#"><i class="fa fa-envelope"></i>⠀Contact</a></li>
-            <li><a href= "#"><i class="fa fa-user"></i>⠀About Us</a></li>
+            <li><a href="../../index.html"><i class="fa fa-home"></i>⠀Home</a></li>
+            <li><a href="../contact/contact.html"><i class="fa fa-envelope"></i>⠀Contact</a></li>
+            <li><a href="../about-us/about.html"><i class="fa fa-user"></i>⠀About Us</a></li>
             <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-chrome"></i>⠀Google</a></li>
             <li><a href="https://www.github.com/" target="_blank"><i class="fa fa-git-square"></i>⠀Github</a></li>
         </ul>
@@ -193,75 +32,30 @@
     <section></section>
 
     <div class="blogtitle">
-    <header class="container">
-        <h1>Blog Posts</h1>
-    </header>
+        <header class="container">
+            <h1>Blog Posts</h1>
+        </header>
     </div>
 
 
     <section class="container">
-        <div class="blogs">
-        <article>
-            <div class="card-header">
-                <h3>Blog Post 1</h3>
-                <small>Published by Byron de Villiers on 7 July 2022</small>
-            </div>
-            <div class="card-content">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <a href="#">Read more</a>
-        </article>
-            </div>
-        </div>
-        
-        <div class="blogs">
-        <article>
-            <div class="card-header">
-                <h3>Blog Post 2</h3>
-                <small>Published by Byron de Villiers on 7 July 2022</small>
-            </div>
-            <div class="card-content">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <a href="#">Read more</a>
-        </article>
-            </div>
-        </div>
-        
-        <div class="blog3">
+        <div class="blog">
             <article>
                 <div class="card-header">
-                    <h3>Blog Post 3</h3>
-                    <small>Published by Byron de Villiers on 7 July 2022</small>
+                    <h3 id="title"></h3>
+                    <h5 id="description"></h5>
+                    <small id="meta-data"></small>
                 </div>
-                <div class="card-content">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                <a href="#">Read more</a>
+                <div id="content" class="card-content"></div>
             </article>
-                </div>
-            </div>
+        </div>
+
     </section>
 
     <div class="copyrightstuff">
-    <footer class="footer">
-        <p>&copy 2022 Blog posts</p>
-    </footer>
+        <footer class="footer">
+            <p>&copy 2022 Blog posts</p>
+        </footer>
     </div>
 
     <script src="./read.js" async defer></script>
