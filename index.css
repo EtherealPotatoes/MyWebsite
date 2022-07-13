@@ -21,12 +21,13 @@ body {
 
 .paragraph-1 {
 	padding: 8px 100px;
-	margin: auto 410px;
+	margin: auto 510px;
 	margin-bottom: 64px;
 	width: 10%;
 	color: rgb(255, 255, 255);
 	background-color: rgba(0, 0, 0, 0.256);
 	border-radius: 8px;
+	text-align: center;
 }
 
 .intro-text {
@@ -34,7 +35,7 @@ body {
 }
 
 .button {
-	background-color: #92a5bd;
+	background-color: white;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	border: none;
 	margin: auto 72px;
@@ -44,7 +45,7 @@ body {
 }
 
 .button:hover {
-	background-color: white;
+	background-color: #92a5bd;
 	border-radius: 8px;
 }
 
