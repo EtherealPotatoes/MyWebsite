@@ -1,12 +1,30 @@
-const urlSearchParams = new URLSearchParams(window.location.search);
-const params = Object.fromEntries(urlSearchParams.entries());
-console.log(params);
+const htmlElement = `
+<div class="flex-item card">
 
+  <div class="card-header">
+    <h3>TITLE</h3>
+  </div>
+
+  <div class="card-content">
+      DESCRIPTION
+      <a href="./pages/read/read.html?blogID=BLOG_ID">
+          Read Blog Post
+      </a>
+  </div>
+
+</div>
+`;
+
+const blogList = document.getElementById("blog-list");
+console.log(blogList);
+
+// Dummy Data
 const blogPosts = [
   {
     id: 1,
-    title: "blog 1",
-    description: "New Blog post",
+    title: "Blog 1",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     author: " Byron",
     dateCreated: new Date(),
     imgURL:
@@ -32,7 +50,8 @@ const blogPosts = [
   {
     id: 2,
     title: "blog 2",
-    description: "New Blog post",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     author: " Byron",
     dateCreated: new Date(),
     imgURL:
@@ -58,7 +77,8 @@ const blogPosts = [
   {
     id: 3,
     title: "blog 3",
-    description: "New Blog post",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     author: " Byron",
     dateCreated: new Date(),
     imgURL:
@@ -83,5 +103,13 @@ const blogPosts = [
   },
 ];
 
-const blog = blogPosts.find(x => x.id == Number (params.blogID))
-console.log(blog)
+var htmlPosts = "";
+for (let i = 0; i < blogPosts.length; i = i + 1) {
+  let elementCopy = Object.assign(htmlElement);
+  let blog = blogPosts[i];
+  elementCopy = elementCopy.replace("TITLE", blog.title);
+  elementCopy = elementCopy.replace("DESCRIPTION", blog.description);
+  elementCopy = elementCopy.replace("BLOG_ID", blog.id);
+  htmlPosts += elementCopy;
+}
+blogList.innerHTML = htmlPosts;
