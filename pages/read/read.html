@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog Posts</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./read.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="height: 1190px">
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times" id="cancel"></i>
+
+    </label>
+    <div class="sidebar">
+        <header>Sidebar</header>
+        <ul>
+            <li><a href="../../index.html"><i class="fa fa-home"></i>⠀Home</a></li>
+            <li><a href="../contact/contact.html"><i class="fa fa-envelope"></i>⠀Contact</a></li>
+            <li><a href="../about-us/about.html"><i class="fa fa-user"></i>⠀About Us</a></li>
+            <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-chrome"></i>⠀Google</a></li>
+            <li><a href="https://www.github.com/" target="_blank"><i class="fa fa-git-square"></i>⠀Github</a></li>
+        </ul>
+    </div>
+    <section></section>
+
+    <div class="blogtitle">
+        <header class="container">
+            <h1>Blog Posts</h1>
+        </header>
+    </div>
+
+
+    <section class="container">
+        <div class="blog">
+            <article>
+                <div class="card-header">
+                    <h3 id="title"></h3>
+                    <h5 id="description"></h5>
+                    <small id="meta-data"></small>
+                </div>
+                <div id="content" class="card-content"></div>
+            </article>
+        </div>
+
+    </section>
+
+    <div class="copyrightstuff">
+        <footer class="footer">
+            <p>&copy 2022 Blog posts</p>
+        </footer>
+    </div>
+
+    <script src="./read.js" async defer></script>
+</body>
+
+</html>
