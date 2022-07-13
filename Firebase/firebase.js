@@ -16,8 +16,8 @@ export const db = Firestore.getFirestore(app);
 export const firestore = Firestore;
 
 try {
-  firestore.docRef = await addDoc(collection(db, "users"), {
-    first: "Ada",
+  firestore.docRef = await addDoc(collection(db, "Blogposts"), {
+    title: "Ada",
     last: "Lovelace",
     born: 1815
   });
