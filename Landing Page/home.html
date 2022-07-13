@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./home.css" />
@@ -16,17 +21,127 @@
         padding: 16px;
       }
 
+        .container {
+            padding: 22px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .sidebar {
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #042331;
+            transition: all .5s ease;
+        }
+        .sidebar header{
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background: rgb(13, 0, 43);
+            user-select: none;
+        }
+        .sidebar ul a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 20px;
+            color: white;
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid black;
+            transition: .4s;
+        }
+        ul li:hover a{
+            padding-left: 50px;
+        }
+        .sidebar ul a i{
+            margin-right: 16px;
+        }
+        #check{
+            display: none;
+        }
+        label #btn,label #cancel{
+            position: absolute;
+            cursor: pointer;
+            background: rgb(13, 0, 43);
+            border-radius: 3px;
+        }
+        label #btn{
+            left: 25px;
+            top: 25px;
+            font-size: 35px;
+            color: white;
+            padding: 6px 12px;
+            transition: all .5s;
+        }
+        label #cancel{
+            z-index: 1111;
+            left: -195px;
+            top: 17px;
+            font-size: 30px;
+            color: #0a5275;
+            padding: 4px 9px;
+            transition: all .5s ease;
+        }
+        #check:checked ~ .sidebar{
+            left: 0;
+        }
+        #check:checked ~ label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            left: 195px;
+        }
+        #check:checked ~ section{
+            margin-left: 250px;
+        }
+        section{
+            background: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: all .5s;
+        }
       .container {
         padding: 22px;
       }
     </style>
   </head>
 
-  <body>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times" id="cancel"></i>
+        
+    </label>
+    <div class="sidebar">
+        <header>Sidebar</header>
+        <ul>
+            <li><a href="#"><i class="fa fa-qrcode"></i>⠀Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>⠀Home</a></li>
+            <li><a href="#"><i class="fa fa-folder"></i>⠀Blogs</a></li>
+            <li><a href="./pages/read/Contact/contact.html"><i class="fa fa-envelope"></i>⠀Contact</a></li>
+            <li><a href="./pages/read/About Us/about.html"><i class="fa fa-user"></i>⠀About Us</a></li>
+            <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-chrome"></i>⠀Google</a></li>
+            <li><a href="https://www.github.com/" target="_blank"><i class="fa fa-git-square"></i>⠀Github</a></li>
+        </ul>
+    </div>
+    <section></section>
+
     <div class="container">
       <h1>Home Page</h1>
       <div id="blog-list" class="flex-box">
-        <!-- <div class="flex-item card">
+        <div class="flex-item card">
 
                 <div class="card-header">
                     <h3>Blog 1</h3>
@@ -41,9 +156,9 @@
                         </a>
                 </div>
 
-            </div> -->
+            </div>
 
-        <!-- <div class="flex-item card">
+        <div class="flex-item card">
 
                 <div class="card-header">
                     <h3>Blog 2</h3>
@@ -57,9 +172,9 @@
                         go to read page
                         </a>
                 </div>
-            </div> -->
+            </div> 
 
-        <!-- <div class="flex-item card">
+        <div class="flex-item card">
 
                 <div class="card-header">
                     <h3>Blog 3</h3>
@@ -73,13 +188,15 @@
                         go to read page
                         </a>
                 </div>
-            </div> -->
+            </div>
       </div>
     </div>
 
+    </body>
     <footer class="footer">
       <p>&copy 2022 Blog posts</p>
     </footer>
     <script src="./home.js"></script>
   </body>
 </html>
+
