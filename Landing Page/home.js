@@ -110,4 +110,4 @@ for (let i = 0; i < blogLists.length; i = i + 1) {
   elementCopy = elementCopy.replace("BLOG_ID", blog.id);
   htmlPosts += elementCopy;
 }
-//blogList.innerHTML = htmlPosts;
+blogList.innerHTML = htmlPosts;
