@@ -8,7 +8,7 @@ body{
 }
 
 .container{
-    width:90%;
+    width: 90%;
     margin:auto;
     border: 0px solid black;
 }
@@ -24,7 +24,7 @@ body{
   }
   
   .flex-item {
-    width: 30%;
+    width: 50%;
     margin: 16px auto;
   }
   
@@ -45,4 +45,3 @@ body{
     padding: 32px;
     font-family: "Times New Roman", Times, serif;
   }
-  
