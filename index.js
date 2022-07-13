@@ -1,3 +1,5 @@
+import * as firebase from "./firebase/firebase.js"
+
 const htmlElement = `
 <div class="flex-item card">
 
@@ -113,3 +115,14 @@ for (let i = 0; i < blogPosts.length; i = i + 1) {
   htmlPosts += elementCopy;
 }
 blogList.innerHTML = htmlPosts;
+
+try {
+  const docRef = await firebase.firestore.addDoc(firebase.firestore.collection(firebase.db, "users"), {
+    first: "Ada",
+    last: "Lovelace",
+    born: 1815
+  });
+  console.log("Document written with ID: ", docRef.id);
+} catch (e) {
+  console.error("Error adding document: ", e);
+}

@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./index.css" />
-
+  
   </head>
 
 <body>
@@ -26,11 +21,9 @@
     <div class="sidebar">
         <header>Sidebar</header>
         <ul>
-            <li><a href="#"><i class="fa fa-qrcode"></i>⠀Dashboard</a></li>
             <li><a href="#"><i class="fa fa-home"></i>⠀Home</a></li>
-            <li><a href="#"><i class="fa fa-folder"></i>⠀Blogs</a></li>
-            <li><a href="./pages/read/Contact/contact.html"><i class="fa fa-envelope"></i>⠀Contact</a></li>
-            <li><a href="./pages/read/About Us/about.html"><i class="fa fa-user"></i>⠀About Us</a></li>
+            <li><a href="./pages/contact/contact.html"><i class="fa fa-envelope"></i>⠀Contact</a></li>
+            <li><a href="./pages/about-us/about.html"><i class="fa fa-user"></i>⠀About Us</a></li>
             <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-chrome"></i>⠀Google</a></li>
             <li><a href="https://www.github.com/" target="_blank"><i class="fa fa-git-square"></i>⠀Github</a></li>
         </ul>
@@ -47,7 +40,7 @@
                 Start reading Blog Posts here
             </h4>
             <br>
-            <button class="button" onclick="javascript:location.href='/Landing%20Page/createblogpost/create.html';">Create Blog</button>
+            <button class="button" onclick="javascript:location.href='./pages/create/create.html';">Create Blog</button>
 
         </div>
     </div>
@@ -56,9 +49,11 @@
      </div>
 
     </body>
+    <div class="copyrightstuff">
     <footer class="footer">
       <p>&copy 2022 Blog posts</p>
     </footer>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
+  </div>
   </body>
 </html>
