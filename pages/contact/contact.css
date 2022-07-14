@@ -12,6 +12,7 @@
 .flex-box {
   display: flex;
   flex-wrap: wrap;
+  margin: 16px;
 }
 
 .flex-item {
@@ -20,21 +21,46 @@
 }
 
 .card {
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 8px;
+  padding: 20px
 }
 
-.card-header {
+/* .card-header {
   padding: 16px;
   border-bottom: 1px solid black;
   background-color: rgb(13, 0, 43);
   color: white;
-}
+} */
 
 .card-content {
   background-color: white;
-  padding: 32px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .form-group {
+	margin-bottom: 2px;
+}
+
+.container label {
+	display: block;
+	}
+
+.container input {
+	width: 95%;
+	padding: 5px;
+}
+
+p {
+	background-color: #92a5bd;
+	color: aliceblue;
+	margin-bottom: -3px;
+	border-radius: 8px;
+	text-align: center;	
+}
+
+.button {
+	text-align: center;
 }
 
 li a {
@@ -42,8 +68,6 @@ li a {
 }
 
 * {
-	margin: 0;
-	padding: 0;
 	list-style: none;
 	text-decoration: none;
 }
